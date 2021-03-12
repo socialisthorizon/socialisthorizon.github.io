@@ -20,6 +20,7 @@ exclude:
   - assets/python
   - node_modules
   - vendor
+  - TODO.md
 
 permalink: /:year/:month/:title/
 
