@@ -5,7 +5,9 @@ layout: new-default
 <main class="post__metadata">
 	<a class="post-meta__back" href="{{ '/blog' | relative_url }}"><< Back to Blog</a>
 	<h1 class="post-meta__title">{{ page.title }}</h1>
-	<h4 class="post-meta__date">// Posted {{ page.date | date: "%b. %-d, %Y"}} <span><br/></span>// tags:
+	<h4 class="blog-post__author">Author: {{ page.author }}</h4>
+	<h4 class="post-meta__date">Posted {{ page.date | date: "%b. %-d, %Y"}}</h4>
+	<h4>Tags:
 		<ul class="post-meta__tags">
 			{% for tag in page.tags %}
 			<li class="post-meta__tag">{{ tag }}</li>
