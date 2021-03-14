@@ -1,9 +1,11 @@
 .top-menu-wrapper {
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
+	width: calc(100vw - 2em);
 	margin: 0;
 	padding: 1em 0em;
-	background-color: hsla(0, 0, 0, .5);
+	background-color: hsla(0, 0, 0, .7);
 	a {
 		padding: 0 1em;
 		font-weight: 700;
@@ -17,6 +19,7 @@
 		}
 	}
 	@media screen and (min-width: 600px) {
+		width: calc(100vw - 4em);
 		padding: 1em 2em;
 	}
 }
