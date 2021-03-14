@@ -1,13 +1,17 @@
 .top-menu-wrapper {
 	position: fixed;
+	top: 0;
+	left: 0;
 	display: flex;
 	justify-content: space-between;
 	width: calc(100vw - 2em);
 	margin: 0;
 	padding: 1em 0em;
 	background-color: hsla(0, 0, 0, .85);
-	a {
+	li {
 		padding: 0 1em;
+	}
+	a {
 		font-family: 'Bungee', cursive;
 		font-weight: 700;
 		line-height: 1;
@@ -22,11 +26,29 @@
 }
 
 .top-menu__title {
+	position: relative;
 	a {
 		color: white;
 		transition: color .3s;
 		&:hover, &:focus, &:active {
 			color: red;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			bottom: -2px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: red;
+			transform: scaleX(0);
+			transform-origin: right;
+			transition: transform .3s ease-out;
+		}
+		&:hover:after, &:focus:after {
+			transform: scaleX(1);
+			transform-origin: left;
 		}
 	}
 }
@@ -36,11 +58,29 @@
 	list-style-type: none;
 	margin: 0;
 	li {
+		position: relative;
 		a {
 			color: red;
 			transition: color .3s;
 			&:hover, &:focus, &:active {
 				color: white;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				display: inline-block;
+				bottom: -2px;
+				left: 1em;
+				width: calc(100% - 2em);
+				height: 2px;
+				background-color: white;
+				transform: scaleX(0);
+				transform-origin: right;
+				transition: transform .3s ease-out;
+			}
+			&:hover:after, &:focus:after {
+				transform: scaleX(1);
+				transform-origin: left;
 			}
 		}
 	}
