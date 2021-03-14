@@ -8,15 +8,12 @@
 	background-color: hsla(0, 0, 0, .7);
 	a {
 		padding: 0 1em;
+		font-family: 'Bungee', cursive;
 		font-weight: 700;
 		line-height: 1;
 		text-decoration: none;
 		text-transform: uppercase;
-		color: white;
 		transition: color .3s;
-		&:hover, &:focus, &:active {
-			color: red;
-		}
 	}
 	@media screen and (min-width: 600px) {
 		width: calc(100vw - 4em);
@@ -25,7 +22,13 @@
 }
 
 .top-menu__title {
-
+	a {
+		color: white;
+		transition: color .3s;
+		&:hover, &:focus, &:active {
+			color: red;
+		}
+	}
 }
 
 .top-menu__list {
@@ -33,6 +36,12 @@
 	list-style-type: none;
 	margin: 0;
 	li {
-
+		a {
+			color: red;
+			transition: color .3s;
+			&:hover, &:focus, &:active {
+				color: white;
+			}
+		}
 	}
 }
