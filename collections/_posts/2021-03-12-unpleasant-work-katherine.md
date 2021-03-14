@@ -6,9 +6,7 @@ date: 2021-03-12
 tags: [labor, automation, quality of living]
 ---
 
-**Prompt:**
-
-*Every socialist society will have a class of jobs that people just plain won't love to do (with a few exceptions, since humans aren't a monolith). Some big examples include trash collection, janitorial work, and any job in which you're in some amount of physical danger. How would you allocate such jobs to make sure people fill them?*
+**Prompt:** *Every socialist society will have a class of jobs that people just plain won't love to do (with a few exceptions, since humans aren't a monolith). Some big examples include trash collection, janitorial work, and any job in which you're in some amount of physical danger. How would you allocate such jobs to make sure people fill them?*
 
 **Answer:**
 
