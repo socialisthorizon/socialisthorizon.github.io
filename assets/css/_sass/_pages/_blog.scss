@@ -1,15 +1,21 @@
 .blog__page-title {
 	margin: 0 4.167%;
-	padding-top: 3em;
+	padding-top: 3rem;
+	font-family: $bungee;
+	font-size: 3.5rem;
 	@media screen and (min-width: 425px) {
-		margin: 0 8.33%;
+		margin: 0 auto;
+		padding: 0 8.33%;
+		max-width: 800px;
 	}
 }
 
 .blog__post-list {
 	margin: 0 4.167%;
 	@media screen and (min-width: 425px) {
-		margin: 0 8.33%;
+		margin: 0 auto;
+		padding: 0 8.33%;
+		max-width: 800px;
 	}
 }
 
