@@ -23,19 +23,29 @@
 .post-meta__author-date-wrapper {
 	display: flex;
 	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	div.divider {
+		display: none;
+	}
 	@media screen and (min-width: 600px) {
 		flex-flow: row nowrap;
+		div.divider {
+			display: initial;
+			padding: 0 1em;
+		}
 	}
 }
 
 .blog-post__author {
+	margin: 0;
 	@media screen and (min-width: 600px) {
-		padding-right: 1em;
+	//	padding-right: 1em;
 	}
 }
 
 .post-meta__date {
-
+	margin: 0;
 }
 
 .post-meta__tags {
@@ -45,6 +55,7 @@
 
 .post-meta__tags-list {
 	display: flex;
+	flex-flow: row wrap;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -52,14 +63,20 @@
 
 .post-meta__tag {
 	margin: 0 .5em;
+	margin-top: .5em;
 	padding: .5em 1em;
 	color: red;
 	border: 2px solid red;
+	white-space: nowrap;
+	&:first-of-type {
+		margin-left: 0;
+	}
 }
 
 .post__content {
 	margin: 0 4.167%;
 	padding-bottom: 3em;
+	padding-top: 1.5em;
 	font-family: $eaves-narrow;
 	line-height: 1.5;
 	@media screen and (min-width: 425px) {
