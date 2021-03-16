@@ -3,6 +3,12 @@
 	padding-top: 3rem;
 	font-family: $bungee;
 	font-size: 3.5rem;
+	div {
+		border-bottom: 4px solid black;
+		line-height: 2;
+
+	}
+	
 	@media screen and (min-width: 425px) {
 		margin: 0 auto;
 		padding: 0 8.33%;
@@ -24,7 +30,15 @@
 }
 
 .blog-post__title {
+	font-family: $prohibition;
+	a {
+		color: black;
+		text-decoration: none;
 
+		&:hover, &:focus {
+
+		}
+	}
 }
 
 .blog-post__author {
