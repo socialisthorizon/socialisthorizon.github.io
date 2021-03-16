@@ -21,10 +21,12 @@
 
 // layouts:
 @import '_layouts/default';
+@import '_layouts/post';
 
 // nav:
 @import '_nav/top-menu';
 //@import '_nav/footer';
 
 // pages:
-//@import '_pages/blog';
+@import '_pages/blog';
+@import '_pages/about';

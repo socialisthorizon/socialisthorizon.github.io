@@ -5,10 +5,14 @@ layout: default
 <section class="post__metadata">
 	<a class="post-meta__back" href="{{ '/blog' | relative_url }}"><< Back to Blog</a>
 	<h1 class="post-meta__title">{{ page.title }}</h1>
-	<h4 class="blog-post__author">Author: {{ page.author }}</h4>
-	<h4 class="post-meta__date">Posted {{ page.date | date: "%b. %-d, %Y"}}</h4>
-	<h4>Tags:
-		<ul class="post-meta__tags">
+	<section class="post-meta__author-date-wrapper">
+		<h4 class="blog-post__author">By {{ page.author }}</h4>
+		<div class="divider">|</div>
+		<h4 class="post-meta__date">Posted {{ page.date | date: "%b. %-d, %Y"}}</h4>
+	</section>
+	<h4 class="post-meta__tags">
+		<span></span>
+		<ul class="post-meta__tags-list">
 			{% for tag in page.tags %}
 			<li class="post-meta__tag">{{ tag }}</li>
 			{% endfor %}
