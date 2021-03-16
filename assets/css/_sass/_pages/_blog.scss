@@ -1,6 +1,6 @@
 .blog__page-title {
 	margin: 0 4.167%;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	font-family: $bungee;
 	font-size: 3.5rem;
 	div {
@@ -8,7 +8,6 @@
 		line-height: 2;
 
 	}
-	
 	@media screen and (min-width: 425px) {
 		margin: 0 auto;
 		padding: 0 8.33%;
@@ -18,15 +17,17 @@
 
 .blog__post-list {
 	margin: 0 4.167%;
+	padding-bottom: 3em;
 	@media screen and (min-width: 425px) {
 		margin: 0 auto;
 		padding: 0 8.33%;
+		padding-bottom: 3em;
 		max-width: 800px;
 	}
 }
 
 .blog-posts__post {
-
+	border-bottom: 1px solid hsla(0, 0, 0%, .7);
 }
 
 .blog-post__title {
@@ -69,6 +70,9 @@
 
 }
 
-.post-read__more {
-
+a.post-read__more {
+	display: inline-block;
+	padding: 1em 0;
+	color: red;
+	text-decoration: none;
 }
