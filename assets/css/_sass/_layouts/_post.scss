@@ -7,7 +7,12 @@
 }
 
 .post-meta__back {
-
+	text-decoration: none;
+	color: black;
+	transition: color .3s;
+	&:hover, &:focus {
+		color: red;
+	}
 }
 
 .post-meta__title {
@@ -15,8 +20,18 @@
 	font-size: 2.5rem;
 }
 
-.blog-post__author {
+.post-meta__author-date-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	@media screen and (min-width: 600px) {
+		flex-flow: row nowrap;
+	}
+}
 
+.blog-post__author {
+	@media screen and (min-width: 600px) {
+		padding-right: 1em;
+	}
 }
 
 .post-meta__date {
