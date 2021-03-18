@@ -18,6 +18,10 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		transition: color .3s;
+		border-bottom-width: 0px;
+		&:hover, &:focus {
+			background-color: hsla(0, 0, 0, 0);
+		}
 	}
 	@media screen and (min-width: 600px) {
 		width: calc(100vw - 4em);
