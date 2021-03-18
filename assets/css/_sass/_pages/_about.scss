@@ -1,0 +1,32 @@
+.about-wrapper {
+	min-height: 50vh;
+}
+
+.about__page-title {
+	margin: 0 4.167%;
+	padding-top: 2rem;
+	font-family: $bungee;
+	font-size: 3.5rem;
+	div {
+		border-bottom: 4px solid black;
+		line-height: 2;
+	}
+	@media screen and (min-width: 425px) {
+		margin: 0 auto;
+		padding: 0 8.33%;
+		max-width: 800px;
+	}
+}
+
+.about__description {
+	margin: 0 4.167%;
+	padding: 3em 0;
+	font-size: 18px;
+	@media screen and (min-width: 425px) {
+		margin: 0 auto;
+		padding: 3em 8.33%;
+	//	padding-bottom: 3em;
+		max-width: 800px;
+	//	font-size: 20px;
+	}
+}
