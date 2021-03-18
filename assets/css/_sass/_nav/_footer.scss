@@ -1,9 +1,11 @@
 .footer {
-
+	height: 50vh;
+	width: 100%;
+	background-color: black;
 }
 
 .footer__content-wrapper {
-
+	display: grid;
 }
 
 .footer__link--name {
@@ -14,10 +16,10 @@
 
 }
 
-.footer__link {
+.footer__link--about {
 
 }
 
-.footer__link {
+.footer__link--blog {
 
 }
