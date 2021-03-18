@@ -7,6 +7,9 @@ description: >-
   A socialist essay society writing about 
   the world to come.
 
+email: rvasocialisthorizon@gmail.com
+github: github.com/socialisthorizon
+
 # 2. build settings
 incremental: true
 markdown: kramdown

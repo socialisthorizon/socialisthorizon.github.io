@@ -1,8 +1,16 @@
 <!-- footer content -->
 <footer class="footer">
-	<ul class="footer__content-wrapper">
-		<li class="footer__link--name"><a href="{{ site.url }}">Socialist Horizon</a></li>
-		<li class="footer__link--about"><a href="{{ '/about' | relative_url }}">About</a></li>
-		<li class="footer__link--blog"><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-	</ul>
+	<main class="footer__content-wrapper">
+		<ul class="footer-section__social-media">
+			<li class="footer-social__email">Email: <a href="mailto:{{site.email}}">{{ site.email }}</a></li>
+			<li class="footer-social__gh">Github: <a href="{{site.github}}">{{ site.github }}</a></li>
+		</ul>
+		<section class="footer-section__graphic">
+			<div class="footer-graphic__wrapper">{% include sh-logo.svg %}</div>
+		</section>
+		<ul class="footer-section__pages">
+			<li class="footer-pages__blog"><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+			<li class="footer-pages__about"><a href="{{ '/about' | relative_url }}">About</a></li>
+		</ul>
+	</main>
 </footer>

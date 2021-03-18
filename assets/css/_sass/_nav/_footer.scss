@@ -2,24 +2,58 @@
 	height: 50vh;
 	width: 100%;
 	background-color: black;
+	line-height: 1.5;
 }
 
 .footer__content-wrapper {
 	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
 }
 
-.footer__link--name {
+.footer-section__social-media {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+	color: white;
+	list-style-type: none;
+	a {
+		color: white;
+	}
+}
+
+.footer-social__email {
 
 }
 
-.footer__link-wrapper {
+.footer-social__gh {
 
 }
 
-.footer__link--about {
+.footer-section__graphic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-graphic__wrapper {
+	height: 200px;
+	width: 200px;
+}
+
+.footer-section__pages {
+	list-style-type: none;
+	a {
+		color: white;
+	}
+}
+
+.footer-pages__blog {
 
 }
 
-.footer__link--blog {
+.footer-pages__about {
 
 }
