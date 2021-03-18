@@ -2,12 +2,14 @@
 	height: 50vh;
 	width: 100%;
 	background-color: black;
+	line-height: 1.5;
 }
 
 .footer__content-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
+	justify-content: center;
 	height: 50vh;
 }
 
@@ -42,6 +44,7 @@
 }
 
 .footer-section__pages {
+	list-style-type: none;
 	a {
 		color: white;
 	}
