@@ -25,8 +25,9 @@
 
 // nav:
 @import '_nav/top-menu';
-//@import '_nav/footer';
+@import '_nav/footer';
 
 // pages:
 @import '_pages/blog';
 @import '_pages/about';
+@import '_pages/home';

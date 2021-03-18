@@ -1,0 +1,58 @@
+.sh-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.sh-title-wrapper {
+	position: relative;
+	display: grid;
+	grid-template-areas: "sh sh"
+						 "sun horizon"
+						 "line line"
+						 "text text";
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 8rem 8rem 8px 1fr;
+	align-items: center;
+}
+
+[class*="sh-home__page-title--"] {
+	margin: .5em 0;
+	font-family: $bungee;
+	font-size: 6rem;
+}
+
+.sh-home__page-title--1 {
+	grid-area: sh;
+	justify-self: end;
+}
+
+.sh-home__page-title--2 {
+	grid-area: horizon;
+}
+
+.sh-home__half-circle {
+	grid-area: sun;
+	position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	height: 100px;
+	width: 200px;
+	background-image: linear-gradient(to bottom, $red, black);
+	border-radius: 150px 150px 0 0;
+}
+
+.sh-home__line {
+	grid-area: line;
+	height: 4px;
+	background-color: black;
+	width: 100%;
+}
+
+.sh-home__description {
+	grid-area: text;
+	font-size: 20px;
+}

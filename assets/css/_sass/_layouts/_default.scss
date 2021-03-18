@@ -3,3 +3,14 @@ body {
 	padding-top: 3em;
 	font-family: $proxima-nova;
 }
+
+a {
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px solid $red;
+	transition: background-color .3s;
+	&:hover, &:focus {
+		background-color: red;
+	}
+}
